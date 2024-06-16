@@ -8,6 +8,7 @@
 | 2. | Capture Frame NodeJS V1 | [Link](./NodejsFrameCapture/README.md)| JavaScript | 
 | 3. | Capture & Multiupload V2 | [Link](./CaptureFMultiUpload/README.md)| JavaScript | 
 | 4. | Computer Vision Azure | [Link](./ComputerVisionAzure/README.md)| JavaScript | 
+| 5. | Collage Image with Canvas | [Link](./PhotoCollage/README.md)| JavaScript | 
 
 ### 1. Video Tag & Categorize with Azure AI Video Indexer
 
@@ -48,4 +49,13 @@ PORT=3003
 ```env
 ENDPOINT=
 SUBSCRIPTION_KEY=
+```
+
+## 5. Collage Image with Canvas
+[README](./PhotoCollage/README.md)
+```bash
+cd PhotoCollage
+npm install 
+# update app.js 
+node app.js
 ```
