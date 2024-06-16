@@ -10,7 +10,7 @@ PORT=3002
 
 2. Open terminal 
 ```bash
-cd NodejsFrameCapture
+cd CaptureFrameNodeJS
 npm i 
 node app.js 
 # Your server is running in http://localhost:3002
