@@ -1,0 +1,118 @@
+# REST API Computer Vision Azure
+
+1. set .env 
+```env
+ENDPOINT=
+SUBSCRIPTION_KEY=
+```
+
+2. Open file app.js change url imageUrl
+```js
+const imageUrl = "https://res.cloudinary.com/di1kz1kvd/image/upload/fl_preserve_transparency/v1718550466/frames/frame-002_jvitig.jpg"
+```
+
+3. Open terminal
+```bash
+npm install
+node app.js
+```
+
+4. Open result at `output.json`
+
+--- 
+
+##  Notes
+
+Input : "https://res.cloudinary.com/di1kz1kvd/image/upload/fl_preserve_transparency/v1718550466/frames/frame-002_jvitig.jpg"
+
+![image](https://res.cloudinary.com/di1kz1kvd/image/upload/fl_preserve_transparency/v1718550466/frames/frame-002_jvitig.jpg)
+
+Ouput :
+```json
+{
+  "modelVersion": "2023-10-01",
+  "captionResult": {
+    "text": "a group of people playing a game",
+    "confidence": 0.8274231553077698
+  },
+  "metadata": {
+    "width": 480,
+    "height": 852
+  },
+  "readResult": {
+    "blocks": [
+      {
+        "lines": [
+          {
+            "text": "040 010",
+            "boundingPolygon": [
+              {
+                "x": 19,
+                "y": 345
+              },
+              {
+                "x": 93,
+                "y": 350
+              },
+              {
+                "x": 92,
+                "y": 367
+              },
+              {
+                "x": 18,
+                "y": 362
+              }
+            ],
+            "words": [
+              {
+                "text": "040",
+                "boundingPolygon": [
+                  {
+                    "x": 21,
+                    "y": 346
+                  },
+                  {
+                    "x": 52,
+                    "y": 348
+                  },
+                  {
+                    "x": 52,
+                    "y": 365
+                  },
+                  {
+                    "x": 20,
+                    "y": 363
+                  }
+                ],
+                "confidence": 0.945
+              },
+              {
+                "text": "010",
+                "boundingPolygon": [
+                  {
+                    "x": 64,
+                    "y": 349
+                  },
+                  {
+                    "x": 94,
+                    "y": 350
+                  },
+                  {
+                    "x": 93,
+                    "y": 367
+                  },
+                  {
+                    "x": 63,
+                    "y": 366
+                  }
+                ],
+                "confidence": 0.623
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
+}
+``` 
